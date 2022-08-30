@@ -9,9 +9,10 @@ export function countryCardTemplate([country]) {
     currencies,
     languages,
   } = country;
-  const oneContry = `
+  const oneContry = `<div class="country-info__wrapper">
         <img class="country-info__flags" src="${svg}" alt="${official}" width="50" />
         <h2 class="country-info__name">${official}</h2>
+        </div>
       <p class="country-info__capital"><span class="country-info__weight">Capital:</span> ${capital}</p>
       <p class="country-info__population"><span class="country-info__weight">Population:</span> ${population}</p>
       <p class="country-info__currency"><span class="country-info__weight">Currency:</span> ${Object.keys(
